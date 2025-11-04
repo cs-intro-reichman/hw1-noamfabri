@@ -16,10 +16,20 @@ public class TimeFormat {
 		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
 		if (hours == 0 ) { 
-		   System.out.println("00:" + minutes + " AM" );
-		} else { if}
+		   System.out.println("12:" + minutes + " AM" );
+		} else if (hours < 12) {
+			System.out.println(hours + ":" + minutes + " AM");
+		} else if (hours == 12) {
+			System.out.println("00" + ":" + minutes + "PM" );
+		} else if (if)	
+		 else {
+			System.out.println((hours - 12) + ":" +minutes + "PM");
+		}
+		}
+			
+		} 
 
 
 		
-		}
-	}
+		
+	
