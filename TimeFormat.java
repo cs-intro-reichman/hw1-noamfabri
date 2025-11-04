@@ -15,19 +15,27 @@ public class TimeFormat {
         // Replace this comment with the rest of your code
 		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
-		if (hours == 0 ) { 
-		   System.out.println("12:" + minutes + " AM" );
-		} else if (hours < 12) {
-			System.out.println(hours + ":" + minutes + " AM");
-		} else if (hours == 12) {
-			System.out.println("00" + ":" + minutes + "PM" );
-		} else if (if)	
-		 else {
-			System.out.println((hours - 12) + ":" +minutes + "PM");
-		}
-		}
-			
+		String 	AMPM = "AM";
+		if (hours > 12) { 
+			hours -= 12;		 
+			AMPM = "PM";	
 		} 
+		if (hours == 12) {
+			AMPM = "PM";
+		}
+		System.out.print(hours + ":");
+		// finishd with hours
+		if (minutes < 10) {
+			System.out.print("0" + minutes + " " + AMPM);			
+		} else {
+			System.out.print(minutes + " " + AMPM);
+		} 
+	}		
+}
+
+
+
+
 
 
 		
