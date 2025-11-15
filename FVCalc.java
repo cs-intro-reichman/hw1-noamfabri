@@ -9,3 +9,12 @@ public class FVCalc {
 		 				   " saved at " + rate + "% " + "will yield " + "$" + (int) futureValue);
 	}
 }
+
+// Nice
+// I would avoid using (int) (double) in system.out.print commands...not because its wrong or bad practice. More like a 'personal coding style'
+// you can define: 
+// double futureValue = blah blah;
+// and then:
+// 	futureValue = (int) futureValue ;
+// 	or
+// int futureValueInt =  (int) futureValue ;
