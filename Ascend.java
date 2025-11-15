@@ -13,3 +13,11 @@ public class Ascend {
 		System.out.println(minNum + " " + middle + " " + maxNum);
 	}
 }
+
+
+// Good name choosing for variables
+// Optional - if your'e always using `lim + 1` , maybe lim can be defined as:
+// int lim = Integer.parseInt(args[0]);
+// lim = lim + 1; (or lim++;)
+// and then no need for lim + 1 every time 
+
