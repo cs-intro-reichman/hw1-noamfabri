@@ -32,7 +32,9 @@ public class TimeFormat {
 	}		
 }
 
-
+// Great!
+// I would have used else if (although there is no overlap between the cases).
+// Using two 'if' 's can we a bit risky when we do have an overlap. so better be on the safe side :)
 
 
 
@@ -40,3 +42,4 @@ public class TimeFormat {
 		
 		
 	
+
